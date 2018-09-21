@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Nariman Safiulin</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500">
+  <!-- Hey, why Rubik? -->
+
+  <style>
+    html {
+      height: 100%;
+      overflow: hidden !important;
+      width: 100%;
+    }
+
+    body {
+      background-color: #FFF;
+      color: #444;
+      font-family: 'Rubik', sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      height: 100%;
+      line-height: 1.6;
+      overflow: hidden !important;
+      text-align: left;
+      width: 100%;
+    }
+
+    a {
+      color: rgb(240, 70, 55);
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    a:hover,
+    a:active,
+    a:focus {
+      text-decoration: none;
+      opacity: .5;
+    }
+
+    .scene {
+      height: 100%;
+      overflow: hidden !important;
+      position: relative;
+      width: 100%;
+    }
+
+    .scene > div {
+      margin: 15vh 12vw;
+    }
+
+    .scene h1 {
+      font-size: 7rem;
+      font-weight: 500;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      text-shadow: 0px 0px 5rem rgba(0,0,0,0.03);
+    }
+
+    .scene h1 span {
+      font-size: 4rem;
+      color: #BBB;
+      display: none;
+      margin-left: 0.4rem;
+    }
+
+    .scene h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1;
+      margin: 1rem 0 0 0.5rem;
+      padding: 0;
+    }
+
+    .scene h3 a {
+      color: #444;
+    }
+
+    .scene h3 a:hover,
+    .scene h3 a:active,
+    .scene h3 a:focus {
+      opacity: .75;
+    }
+
+    .scene ul {
+      font-size: 2rem;
+      list-style: none;
+      margin: 2rem 0 0 0.5rem;
+      padding: 0;
+    }
+
+    .scene ul li {
+      display: inline-block;
+    }
+
+    .scene ul li + li {
+      margin-left: 1rem
+    }
+
+    .scene ul li i.fa-github {
+      color: #333;
+    }
+
+    .scene ul li i.fa-twitter {
+      color: #1DA1F2;
+    }
+
+    .comment {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+    }
+
+    .comment > p {
+      color: #DDD;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="scene" class="scene" data-pointer-events="true" data-limit-x="250" data-limit-y="250" data-calibrate-x="true" data-calibrate-y="true">
+    <div data-depth="0.1">
+      <h1>Nariman <span>Safiulin</span></h1>
+      <h3><a href="https://www.google.com/maps/search/Kaliningrad,%20Russia" title="Where is it? It's around here somewhere (points to the globe)... Okay, just.. just click to show it on Google Maps!" target="_blank">Kaliningrad, Russia</a></h3>
+
+      <ul>
+        <li><a href="https://github.com/narimansafiulin" title="Page on GitHub: @narimansafiulin"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com/narimansafiulin" title="Page on Twitter: @narimansafiulin"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="comment">
+    <p>Wow, so much information. Quality personal page.</p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script>
+    (function() {
+      parallax = new Parallax(document.getElementById("scene"));
+    })();
+  </script>
+</body>
+</html>
